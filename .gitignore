@@ -17,6 +17,7 @@ docker_assets
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
 
 # C extensions
 *.so
@@ -44,6 +45,7 @@ mnist_data/
 var/
 wheels/
 *.egg-info/
+models/
 .installed.cfg
 *.egg
 
@@ -73,6 +75,9 @@ Data/data/
 *.csv
 *.hdf5
 #*.json
+test_data.json
+train_data.json
+val_data.json
 
 # Translations
 *.mo

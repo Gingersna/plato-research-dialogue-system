@@ -1,0 +1,32 @@
+---
+
+GENERAL:
+  interaction_mode: text
+  agents: 1
+  generic: True
+
+  experience_logs:
+    save: False
+    load: False
+    path: logs/CrossWOZ_text
+
+  global_arguments:
+    domain: SlotFilling
+
+DIALOGUE:
+  num_dialogues: 10
+  domain: SlotFilling
+
+
+AGENT_0:
+  role: system
+  modules: 1
+
+  MODULE_0:
+    package: plato.agent.component.joint_model.cross_woz_nlu
+    class: CrossWOZNLU
+    arguments:
+      model_file: models/cross_woz_nlu/all
+      config_file: plato/agent/component/joint_model/crosswoz/configs/crosswoz_all.json
+      mode: sys
+
