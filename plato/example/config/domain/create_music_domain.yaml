@@ -1,0 +1,14 @@
+---
+
+GENERAL:
+  csv_file_name: example/data/chinesemusic.csv
+  db_table_name: chinesemusic
+  db_file_path: example/domains/chinesemusic-dbase.db
+  ontology_file_path: example/domains/chinesemusic-rules.json
+
+ONTOLOGY:
+  informable_slots: [artists, chinese_song_name]
+
+  requestable_slots: [chinese_song_name, albums]
+
+  system_requestable_slots: [artists, chinese_song_name]

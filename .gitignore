@@ -78,6 +78,7 @@ Data/data/
 test_data.json
 train_data.json
 val_data.json
+ext_data/
 
 # Translations
 *.mo
